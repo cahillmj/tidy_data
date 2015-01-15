@@ -8,7 +8,7 @@ test_subj <- read.csv('test/subject_test.txt', header = FALSE)[[1]]
 all_subj <- c(train_subj, test_subj)
 
 #get list of training activities and test activities and concatenate them
-train_dat <- read.table('train/x_train.txt')
+train_dat <- read.table('train/X_train.txt')
 test_dat <- read.table('test/X_test.txt')
 all_dat <- rbind(train_dat, test_dat)
 
