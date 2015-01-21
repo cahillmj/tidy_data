@@ -36,8 +36,8 @@ for (i in 1:length(all_dat$Activity)){
 }
 
 #vectors containing patterns to be changed in variable names and replacement values
-old_var_name_components <- c('^t','^f','Acc','Gyro','Mag','-mean\\(\\)','-std\\(\\)','-')
-new_var_name_components <- c('time','freq','Accel','Gyroscope','Magnitude','Mean','StDev','')
+old_var_name_components <- c('^t','^f','Acc','Gyro','Mag','-mean\\(\\)','-std\\(\\)','-', 'BodyBody')
+new_var_name_components <- c('time','freq','Accel','Gyroscope','Magnitude','Mean','StDev','', 'Body')
 
 #update variable names with replacement values to increase clarity
 for (j in 1:length(old_var_name_components)){

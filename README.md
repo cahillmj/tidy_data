@@ -20,3 +20,6 @@ Here is a list of steps that the script performs:
   * Updates variable names for clarity.
   * Summarizes the data by subject and by activity, so that for each subject, the mean of each variable is reported for each of the 6 activities (30 subjects x 6 activities = 180 total rows of data).
   * Writes this summary table to a text file in your working directory
+
+To read the tidy data set after running the script, enter the following code:
+	read.table('tidy_UCI_HAR.txt', header = TRUE)
